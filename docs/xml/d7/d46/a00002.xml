@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="d7/d46/a00002" kind="class" prot="public">
+    <compoundname>DynamicArray</compoundname>
+    <basecompoundref refid="d8/d84/a00001" prot="public" virt="non-virtual">ArrayBase&lt; T &gt;</basecompoundref>
+    <includes refid="de/d21/a00006" local="no">DynamicArray.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d7/d46/a00002_1a7d42e6eaa66bab7c43f193e78d2d56a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DynamicArray&lt; T &gt;::DynamicArray</definition>
+        <argsstring>()</argsstring>
+        <name>DynamicArray</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default initializing constructor.</para><para>Calls <ref refid="d8/d84/a00001" kindref="compound">ArrayBase</ref> default initializing constructor.</para><para><simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/DynamicArray.h" line="30" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/DynamicArray.cpp" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d46/a00002_1a2b4e0e5f2d4af1b1ec5e37bcf2b63e27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DynamicArray&lt; T &gt;::DynamicArray</definition>
+        <argsstring>(size_t maxSize)</argsstring>
+        <name>DynamicArray</name>
+        <param>
+          <type>size_t</type>
+          <declname>maxSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializing constructor. Sets max size to <computeroutput>maxSize</computeroutput>, effectively overriding the default.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maxSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(size_t) Maximum size of the array. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/DynamicArray.h" line="40" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/DynamicArray.cpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d46/a00002_1ad054824baa39e43dd319dad7edff0316" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DynamicArray&lt; T &gt;::DynamicArray</definition>
+        <argsstring>(size_t maxSize, T fill)</argsstring>
+        <name>DynamicArray</name>
+        <param>
+          <type>size_t</type>
+          <declname>maxSize</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>fill</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializing constructor. Sets max size to <computeroutput>maxSize</computeroutput> and filling each element of the array with <computeroutput>fill</computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maxSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(size_t) Maximum size of the array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fill</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(T) Contents of each element. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/DynamicArray.h" line="51" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/DynamicArray.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d46/a00002_1ae6f8273691c6c3a9284e7455e6bea18d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DynamicArray&lt; T &gt;::DynamicArray</definition>
+        <argsstring>(const DynamicArray &amp;arr)</argsstring>
+        <name>DynamicArray</name>
+        <param>
+          <type>const <ref refid="d7/d46/a00002" kindref="compound">DynamicArray</ref> &amp;</type>
+          <declname>arr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Copy constructor.</para><para>The source <ref refid="d7/d46/a00002" kindref="compound">DynamicArray</ref> can be of any size, as long as they are the same type.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>arr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(const <ref refid="d7/d46/a00002" kindref="compound">DynamicArray</ref> &amp;) The source <ref refid="d7/d46/a00002" kindref="compound">DynamicArray</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/DynamicArray.h" line="63" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/DynamicArray.cpp" bodystart="43" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d46/a00002_1a1ace6a2b9a5ed8890a840c400f41ce9a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DynamicArray&lt; T &gt;::~DynamicArray</definition>
+        <argsstring>(void)</argsstring>
+        <name>~DynamicArray</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor.</para><para><simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/DynamicArray.h" line="70" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/DynamicArray.cpp" bodystart="52" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d46/a00002_1a7d9f29d3efa102b7d8229bfc24b9d431" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DynamicArray&lt; T &gt;::resize</definition>
+        <argsstring>(void)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets maxSize equal to currentSize.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>(void)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/DynamicArray.h" line="78" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/DynamicArray.cpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d46/a00002_1aee346fa4cd0db8d1f385ea82aa93f541" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DynamicArray&lt; T &gt;::resize</definition>
+        <argsstring>(size_t maxSize)</argsstring>
+        <name>resize</name>
+        <param>
+          <type>size_t</type>
+          <declname>maxSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets a new maxSize.</para><para>If maxSize is less than _currentSize, then the array is truncated. If maxSize is greater than currentSize, then the array is made larger and the new elements are not initialized to anything. If maxSize is the same as currentSize, then nothing happens except for the removal of uninitialized elements.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maxSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The new maximum size of the array. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/DynamicArray.h" line="94" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/DynamicArray.cpp" bodystart="69" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d46/a00002_1aeb1916d4d9cf7db37df86cb7a603c198" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const size_t</type>
+        <definition>const size_t DynamicArray&lt; T &gt;::maxSize</definition>
+        <argsstring>(void)</argsstring>
+        <name>maxSize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query the maximum size of the array.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>(void)</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/DynamicArray.h" line="102" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/DynamicArray.cpp" bodystart="106" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="d7/d46/a00002_1a683eba7c0e4652c6b1baae93e1e6ca7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="d7/d46/a00002" kindref="compound">DynamicArray</ref> &amp;</type>
+        <definition>const DynamicArray&lt; T &gt; &amp; DynamicArray&lt; T &gt;::operator=</definition>
+        <argsstring>(const DynamicArray &amp;)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const <ref refid="d7/d46/a00002" kindref="compound">DynamicArray</ref> &amp;</type>
+          <defname>rhs</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Assignment operator.</para><para>Assigns the right hand side of the assignment operator to the left. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(const <ref refid="d7/d46/a00002" kindref="compound">DynamicArray</ref> &amp;) The source <ref refid="d7/d46/a00002" kindref="compound">DynamicArray</ref>. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/DynamicArray.h" line="113" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/DynamicArray.cpp" bodystart="115" bodyend="132"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A resizable array. Inherits <ref refid="d8/d84/a00001" kindref="compound">ArrayBase</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para>Contains specific methods to resize a raw array. <simplesect kind="since"><para>0.1.0 </para></simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(typename) Element type of array. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="10">
+        <label>DynamicArray&lt; T &gt;</label>
+        <link refid="d7/d46/a00002"/>
+        <childnode refid="11" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>ArrayBase&lt; T &gt;</label>
+        <link refid="d8/d84/a00001"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="12">
+        <label>DynamicArray&lt; T &gt;</label>
+        <link refid="d7/d46/a00002"/>
+        <childnode refid="13" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>ArrayBase&lt; T &gt;</label>
+        <link refid="d8/d84/a00001"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/bdfoster/Projects/c++/templates/DynamicArray.h" line="20" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/DynamicArray.h" bodystart="20" bodyend="114"/>
+    <listofallmembers>
+      <member refid="d8/d84/a00001_1a949fbe49f202aed7d4ce8442b7fd0bd5" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>ArrayBase</name></member>
+      <member refid="d8/d84/a00001_1af9db2c439a3c5bc723c66d44ba4049a0" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>ArrayBase</name></member>
+      <member refid="d8/d84/a00001_1a5de8eae891c4d4f855a6739fc573de85" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>ArrayBase</name></member>
+      <member refid="d8/d84/a00001_1a11dc3b617f2fedbb3b499971493b9c4f" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>clear</name></member>
+      <member refid="d7/d46/a00002_1a7d42e6eaa66bab7c43f193e78d2d56a9" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>DynamicArray</name></member>
+      <member refid="d7/d46/a00002_1a2b4e0e5f2d4af1b1ec5e37bcf2b63e27" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>DynamicArray</name></member>
+      <member refid="d7/d46/a00002_1ad054824baa39e43dd319dad7edff0316" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>DynamicArray</name></member>
+      <member refid="d7/d46/a00002_1ae6f8273691c6c3a9284e7455e6bea18d" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>DynamicArray</name></member>
+      <member refid="d8/d84/a00001_1a6becc5e91c79d7693c0d406e466f9ec6" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>fill</name></member>
+      <member refid="d8/d84/a00001_1adc718f38281ba844303941c4d111cc8c" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>find</name></member>
+      <member refid="d8/d84/a00001_1a450ec98ae75a13f7dfbd6ba499218b8e" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>find</name></member>
+      <member refid="d8/d84/a00001_1aabda9501caf50b75ce09e7ef47fd1de7" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>get</name></member>
+      <member refid="d8/d84/a00001_1a1687635b3bda64e9064e53b8d5a91ac1" prot="public" virt="virtual"><scope>DynamicArray</scope><name>isEmpty</name></member>
+      <member refid="d7/d46/a00002_1aeb1916d4d9cf7db37df86cb7a603c198" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>maxSize</name></member>
+      <member refid="d8/d84/a00001_1acb1f14f8761d00708f25281854bf0769" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>operator!=</name></member>
+      <member refid="d7/d46/a00002_1a683eba7c0e4652c6b1baae93e1e6ca7b" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>operator=</name></member>
+      <member refid="d8/d84/a00001_1a95a446bcd6e8b2ff10e6f5c0232e6069" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>operator==</name></member>
+      <member refid="d8/d84/a00001_1a654b9073ee55e973fc31a9c03affe423" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>operator[]</name></member>
+      <member refid="d8/d84/a00001_1a38d83584b9e023781779af9dd733d822" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>operator[]</name></member>
+      <member refid="d7/d46/a00002_1a7d9f29d3efa102b7d8229bfc24b9d431" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>resize</name></member>
+      <member refid="d7/d46/a00002_1aee346fa4cd0db8d1f385ea82aa93f541" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>resize</name></member>
+      <member refid="d8/d84/a00001_1a5a9fe61509061defe530d0ebc3a91497" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>set</name></member>
+      <member refid="d8/d84/a00001_1aeed263e1e987901c8cc2c1e1d3102d73" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>size</name></member>
+      <member refid="d8/d84/a00001_1aa881b5ee704e0f293b4dddbaf8990149" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>type</name></member>
+      <member refid="d8/d84/a00001_1a76eb6a2544ace5a6c8cc972b876b60a0" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>~ArrayBase</name></member>
+      <member refid="d7/d46/a00002_1a1ace6a2b9a5ed8890a840c400f41ce9a" prot="public" virt="non-virtual"><scope>DynamicArray</scope><name>~DynamicArray</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

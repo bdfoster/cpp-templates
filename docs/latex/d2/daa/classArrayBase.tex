@@ -1,0 +1,372 @@
+\hypertarget{classArrayBase}{\section{Array\+Base$<$ T $>$ Class Template Reference}
+\label{classArrayBase}\index{Array\+Base$<$ T $>$@{Array\+Base$<$ T $>$}}
+}
+
+
+Base class for array-\/like structures.  
+
+
+
+
+{\ttfamily \#include $<$Array\+Base.\+h$>$}
+
+
+
+Inheritance diagram for Array\+Base$<$ T $>$\+:
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classArrayBase_aa881b5ee704e0f293b4dddbaf8990149}{typedef T {\bfseries type}}\label{classArrayBase_aa881b5ee704e0f293b4dddbaf8990149}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classArrayBase_a949fbe49f202aed7d4ce8442b7fd0bd5}{Array\+Base} (void)
+\item 
+\hyperlink{classArrayBase_af9db2c439a3c5bc723c66d44ba4049a0}{Array\+Base} (size\+\_\+t max\+Size)
+\item 
+\hyperlink{classArrayBase_a5de8eae891c4d4f855a6739fc573de85}{Array\+Base} (size\+\_\+t max\+Size, T \hyperlink{classArrayBase_a6becc5e91c79d7693c0d406e466f9ec6}{fill})
+\item 
+\hyperlink{classArrayBase_a76eb6a2544ace5a6c8cc972b876b60a0}{$\sim$\+Array\+Base} (void)
+\item 
+size\+\_\+t \hyperlink{classArrayBase_aeed263e1e987901c8cc2c1e1d3102d73}{size} (void)
+\item 
+T \hyperlink{classArrayBase_aabda9501caf50b75ce09e7ef47fd1de7}{get} (size\+\_\+t index) const 
+\item 
+void \hyperlink{classArrayBase_a5a9fe61509061defe530d0ebc3a91497}{set} (size\+\_\+t index, T contents)
+\item 
+int \hyperlink{classArrayBase_adc718f38281ba844303941c4d111cc8c}{find} (T element)
+\item 
+int \hyperlink{classArrayBase_a450ec98ae75a13f7dfbd6ba499218b8e}{find} (T element, size\+\_\+t start\+Index)
+\item 
+void \hyperlink{classArrayBase_a6becc5e91c79d7693c0d406e466f9ec6}{fill} (T contents)
+\item 
+void \hyperlink{classArrayBase_a11dc3b617f2fedbb3b499971493b9c4f}{clear} ()
+\item 
+virtual bool \hyperlink{classArrayBase_a1687635b3bda64e9064e53b8d5a91ac1}{is\+Empty} ()
+\item 
+bool \hyperlink{classArrayBase_a95a446bcd6e8b2ff10e6f5c0232e6069}{operator==} (const \hyperlink{classArrayBase}{Array\+Base}$<$ T $>$ \&rhs) const 
+\item 
+bool \hyperlink{classArrayBase_acb1f14f8761d00708f25281854bf0769}{operator!=} (const \hyperlink{classArrayBase}{Array\+Base}$<$ T $>$ \&rhs) const 
+\item 
+T \hyperlink{classArrayBase_a654b9073ee55e973fc31a9c03affe423}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t index) const 
+\item 
+T \& \hyperlink{classArrayBase_a38d83584b9e023781779af9dd733d822}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t index)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class Array\+Base$<$ T $>$}
+
+Base class for array-\/like structures. 
+
+Contains the actual raw array of type T along with common properties and methods for array like structures. \begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & (typename) Element type of array. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classArrayBase_a949fbe49f202aed7d4ce8442b7fd0bd5}{\index{Array\+Base@{Array\+Base}!Array\+Base@{Array\+Base}}
+\index{Array\+Base@{Array\+Base}!Array\+Base@{Array\+Base}}
+\subsubsection[{Array\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Array\+Base}$<$ T $>$\+::{\bf Array\+Base} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classArrayBase_a949fbe49f202aed7d4ce8442b7fd0bd5}
+Default initializing constructor.
+
+Creates the raw array of type {\ttfamily T} and sets the maximum size to 10 by default. \hypertarget{classArrayBase_af9db2c439a3c5bc723c66d44ba4049a0}{\index{Array\+Base@{Array\+Base}!Array\+Base@{Array\+Base}}
+\index{Array\+Base@{Array\+Base}!Array\+Base@{Array\+Base}}
+\subsubsection[{Array\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Array\+Base}$<$ T $>$\+::{\bf Array\+Base} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{max\+Size}
+\end{DoxyParamCaption}
+)}}\label{classArrayBase_af9db2c439a3c5bc723c66d44ba4049a0}
+Initializing constructor. Sets max size to {\ttfamily max\+Size}, effectively overriding the default.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Size} & (size\+\_\+t) Maximum size of the array. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classArrayBase_a5de8eae891c4d4f855a6739fc573de85}{\index{Array\+Base@{Array\+Base}!Array\+Base@{Array\+Base}}
+\index{Array\+Base@{Array\+Base}!Array\+Base@{Array\+Base}}
+\subsubsection[{Array\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Array\+Base}$<$ T $>$\+::{\bf Array\+Base} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{max\+Size, }
+\item[{T}]{fill}
+\end{DoxyParamCaption}
+)}}\label{classArrayBase_a5de8eae891c4d4f855a6739fc573de85}
+Initializing constructor. Sets max size to {\ttfamily max\+Size} and filling each element of the array with {\ttfamily fill}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Size} & (size\+\_\+t) Maximum size of the array. \\
+\hline
+{\em fill} & (T) Contents of each element. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classArrayBase_a76eb6a2544ace5a6c8cc972b876b60a0}{\index{Array\+Base@{Array\+Base}!````~Array\+Base@{$\sim$\+Array\+Base}}
+\index{````~Array\+Base@{$\sim$\+Array\+Base}!Array\+Base@{Array\+Base}}
+\subsubsection[{$\sim$\+Array\+Base}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Array\+Base}$<$ T $>$\+::$\sim${\bf Array\+Base} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classArrayBase_a76eb6a2544ace5a6c8cc972b876b60a0}
+Destructor
+
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classArrayBase_a11dc3b617f2fedbb3b499971493b9c4f}{\index{Array\+Base@{Array\+Base}!clear@{clear}}
+\index{clear@{clear}!Array\+Base@{Array\+Base}}
+\subsubsection[{clear}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Array\+Base}$<$ T $>$\+::clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classArrayBase_a11dc3b617f2fedbb3b499971493b9c4f}
+Clears all elements from the array. \begin{DoxyReturn}{Returns}
+(void) 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classArrayBase_a6becc5e91c79d7693c0d406e466f9ec6}{\index{Array\+Base@{Array\+Base}!fill@{fill}}
+\index{fill@{fill}!Array\+Base@{Array\+Base}}
+\subsubsection[{fill}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Array\+Base}$<$ T $>$\+::fill (
+\begin{DoxyParamCaption}
+\item[{T}]{contents}
+\end{DoxyParamCaption}
+)}}\label{classArrayBase_a6becc5e91c79d7693c0d406e466f9ec6}
+Set each element in raw array to given {\ttfamily element} up to the maximum size.
+
+
+\begin{DoxyParams}{Parameters}
+{\em contents} & (T) Element to fill \hyperlink{classArrayBase}{Array\+Base} with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(void) 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classArrayBase_adc718f38281ba844303941c4d111cc8c}{\index{Array\+Base@{Array\+Base}!find@{find}}
+\index{find@{find}!Array\+Base@{Array\+Base}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ int {\bf Array\+Base}$<$ T $>$\+::find (
+\begin{DoxyParamCaption}
+\item[{T}]{element}
+\end{DoxyParamCaption}
+)}}\label{classArrayBase_adc718f38281ba844303941c4d111cc8c}
+Return first {\ttfamily index} that matches element.
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & (T) Element to match with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(int) {\ttfamily index} or -\/1 if no match. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classArrayBase_a450ec98ae75a13f7dfbd6ba499218b8e}{\index{Array\+Base@{Array\+Base}!find@{find}}
+\index{find@{find}!Array\+Base@{Array\+Base}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ int {\bf Array\+Base}$<$ T $>$\+::find (
+\begin{DoxyParamCaption}
+\item[{T}]{element, }
+\item[{size\+\_\+t}]{start\+Index}
+\end{DoxyParamCaption}
+)}}\label{classArrayBase_a450ec98ae75a13f7dfbd6ba499218b8e}
+Return first {\ttfamily index} that matches {\ttfamily element} starting at the given index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & (T) Element to match with. \\
+\hline
+{\em start\+Index} & (size\+\_\+t) The {\ttfamily index} to start with. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(int) {\ttfamily index} or -\/1 if no match. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classArrayBase_aabda9501caf50b75ce09e7ef47fd1de7}{\index{Array\+Base@{Array\+Base}!get@{get}}
+\index{get@{get}!Array\+Base@{Array\+Base}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T {\bf Array\+Base}$<$ T $>$\+::get (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const}}\label{classArrayBase_aabda9501caf50b75ce09e7ef47fd1de7}
+Query the element at specified index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & (size\+\_\+t) Index of query element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(T) The element at specified index. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & Index is out of the range. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classArrayBase_a1687635b3bda64e9064e53b8d5a91ac1}{\index{Array\+Base@{Array\+Base}!is\+Empty@{is\+Empty}}
+\index{is\+Empty@{is\+Empty}!Array\+Base@{Array\+Base}}
+\subsubsection[{is\+Empty}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ virtual bool {\bf Array\+Base}$<$ T $>$\+::is\+Empty (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classArrayBase_a1687635b3bda64e9064e53b8d5a91ac1}
+Test to see if array is empty.
+
+\begin{DoxyReturn}{Returns}
+(void) 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classArrayBase_acb1f14f8761d00708f25281854bf0769}{\index{Array\+Base@{Array\+Base}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Array\+Base@{Array\+Base}}
+\subsubsection[{operator"!=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool {\bf Array\+Base}$<$ T $>$\+::operator!= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array\+Base}$<$ T $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{classArrayBase_acb1f14f8761d00708f25281854bf0769}
+Determine inequality with given \hyperlink{classArrayBase}{Array\+Base}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & (const \hyperlink{classArrayBase}{Array\+Base} $<$\+T$>$ \&) \hyperlink{classArrayBase}{Array\+Base} to test against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(bool) True if inequal, otherwise false. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classArrayBase_a95a446bcd6e8b2ff10e6f5c0232e6069}{\index{Array\+Base@{Array\+Base}!operator==@{operator==}}
+\index{operator==@{operator==}!Array\+Base@{Array\+Base}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ bool {\bf Array\+Base}$<$ T $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Array\+Base}$<$ T $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+) const}}\label{classArrayBase_a95a446bcd6e8b2ff10e6f5c0232e6069}
+Determine equality with given \hyperlink{classArrayBase}{Array\+Base}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & (const \hyperlink{classArrayBase}{Array\+Base} $<$\+T$>$ \&) \hyperlink{classArrayBase}{Array\+Base} to test against. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(bool) True if equal, otherwise false. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classArrayBase_a654b9073ee55e973fc31a9c03affe423}{\index{Array\+Base@{Array\+Base}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Array\+Base@{Array\+Base}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T {\bf Array\+Base}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+) const}}\label{classArrayBase_a654b9073ee55e973fc31a9c03affe423}
+Query the element given the index. 
+\begin{DoxyParams}{Parameters}
+{\em index} & (size\+\_\+t) Index of the element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(T const) element at specified {\ttfamily index}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classArrayBase_a38d83584b9e023781779af9dd733d822}{\index{Array\+Base@{Array\+Base}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!Array\+Base@{Array\+Base}}
+\subsubsection[{operator[]}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T \& {\bf Array\+Base}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)}}\label{classArrayBase_a38d83584b9e023781779af9dd733d822}
+Query the element given the index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & (size\+\_\+t) Index of the element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(T \&) element at specified {\ttfamily index}. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classArrayBase_a5a9fe61509061defe530d0ebc3a91497}{\index{Array\+Base@{Array\+Base}!set@{set}}
+\index{set@{set}!Array\+Base@{Array\+Base}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Array\+Base}$<$ T $>$\+::set (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{index, }
+\item[{T}]{contents}
+\end{DoxyParamCaption}
+)}}\label{classArrayBase_a5a9fe61509061defe530d0ebc3a91497}
+Sets the element at the specified index.
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & (size\+\_\+t) Index of element. \\
+\hline
+{\em contents} & (T) Contents of element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+(void) 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & Index is out of the range. \\
+\hline
+\end{DoxyExceptions}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classArrayBase_aeed263e1e987901c8cc2c1e1d3102d73}{\index{Array\+Base@{Array\+Base}!size@{size}}
+\index{size@{size}!Array\+Base@{Array\+Base}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ size\+\_\+t {\bf Array\+Base}$<$ T $>$\+::size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classArrayBase_aeed263e1e987901c8cc2c1e1d3102d73}
+Query the current size.
+
+\begin{DoxyReturn}{Returns}
+(size\+\_\+t) The current size. 
+\end{DoxyReturn}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{ArrayBase_8h}{Array\+Base.\+h}\item 
+\hyperlink{ArrayBase_8cpp}{Array\+Base.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.8">
+  <compound refid="d8/d84/a00001" kind="class"><name>ArrayBase</name>
+    <member refid="d8/d84/a00001_1aa881b5ee704e0f293b4dddbaf8990149" kind="typedef"><name>type</name></member>
+    <member refid="d8/d84/a00001_1a0ad9821b150c9436112acd478b46db51" kind="variable"><name>_data</name></member>
+    <member refid="d8/d84/a00001_1a81ac25e6e454093831c4e17c01cd0aa5" kind="variable"><name>_currentSize</name></member>
+    <member refid="d8/d84/a00001_1a82e2db846b362b01f52d31bf8823dc96" kind="variable"><name>_maxSize</name></member>
+    <member refid="d8/d84/a00001_1a949fbe49f202aed7d4ce8442b7fd0bd5" kind="function"><name>ArrayBase</name></member>
+    <member refid="d8/d84/a00001_1af9db2c439a3c5bc723c66d44ba4049a0" kind="function"><name>ArrayBase</name></member>
+    <member refid="d8/d84/a00001_1a5de8eae891c4d4f855a6739fc573de85" kind="function"><name>ArrayBase</name></member>
+    <member refid="d8/d84/a00001_1a76eb6a2544ace5a6c8cc972b876b60a0" kind="function"><name>~ArrayBase</name></member>
+    <member refid="d8/d84/a00001_1aeed263e1e987901c8cc2c1e1d3102d73" kind="function"><name>size</name></member>
+    <member refid="d8/d84/a00001_1aabda9501caf50b75ce09e7ef47fd1de7" kind="function"><name>get</name></member>
+    <member refid="d8/d84/a00001_1a5a9fe61509061defe530d0ebc3a91497" kind="function"><name>set</name></member>
+    <member refid="d8/d84/a00001_1adc718f38281ba844303941c4d111cc8c" kind="function"><name>find</name></member>
+    <member refid="d8/d84/a00001_1a450ec98ae75a13f7dfbd6ba499218b8e" kind="function"><name>find</name></member>
+    <member refid="d8/d84/a00001_1a6becc5e91c79d7693c0d406e466f9ec6" kind="function"><name>fill</name></member>
+    <member refid="d8/d84/a00001_1a11dc3b617f2fedbb3b499971493b9c4f" kind="function"><name>clear</name></member>
+    <member refid="d8/d84/a00001_1a1687635b3bda64e9064e53b8d5a91ac1" kind="function"><name>isEmpty</name></member>
+    <member refid="d8/d84/a00001_1a95a446bcd6e8b2ff10e6f5c0232e6069" kind="function"><name>operator==</name></member>
+    <member refid="d8/d84/a00001_1acb1f14f8761d00708f25281854bf0769" kind="function"><name>operator!=</name></member>
+    <member refid="d8/d84/a00001_1a654b9073ee55e973fc31a9c03affe423" kind="function"><name>operator[]</name></member>
+    <member refid="d8/d84/a00001_1a38d83584b9e023781779af9dd733d822" kind="function"><name>operator[]</name></member>
+  </compound>
+  <compound refid="d7/d46/a00002" kind="class"><name>DynamicArray</name>
+    <member refid="d7/d46/a00002_1a7d42e6eaa66bab7c43f193e78d2d56a9" kind="function"><name>DynamicArray</name></member>
+    <member refid="d7/d46/a00002_1a2b4e0e5f2d4af1b1ec5e37bcf2b63e27" kind="function"><name>DynamicArray</name></member>
+    <member refid="d7/d46/a00002_1ad054824baa39e43dd319dad7edff0316" kind="function"><name>DynamicArray</name></member>
+    <member refid="d7/d46/a00002_1ae6f8273691c6c3a9284e7455e6bea18d" kind="function"><name>DynamicArray</name></member>
+    <member refid="d7/d46/a00002_1a1ace6a2b9a5ed8890a840c400f41ce9a" kind="function"><name>~DynamicArray</name></member>
+    <member refid="d7/d46/a00002_1a7d9f29d3efa102b7d8229bfc24b9d431" kind="function"><name>resize</name></member>
+    <member refid="d7/d46/a00002_1aee346fa4cd0db8d1f385ea82aa93f541" kind="function"><name>resize</name></member>
+    <member refid="d7/d46/a00002_1aeb1916d4d9cf7db37df86cb7a603c198" kind="function"><name>maxSize</name></member>
+    <member refid="d7/d46/a00002_1a683eba7c0e4652c6b1baae93e1e6ca7b" kind="function"><name>operator=</name></member>
+  </compound>
+  <compound refid="d1/d7c/a00003" kind="file"><name>ArrayBase.cpp</name>
+    <member refid="d1/d7c/a00003_1aeb58186c19f02cd09f0d5295a03a8a87" kind="define"><name>_ARRAY_BASE_CPP_</name></member>
+  </compound>
+  <compound refid="d0/d0b/a00004" kind="file"><name>ArrayBase.h</name>
+  </compound>
+  <compound refid="dd/dad/a00005" kind="file"><name>DynamicArray.cpp</name>
+    <member refid="dd/dad/a00005_1a2456e0218e200f6ae1142d51cbbc0941" kind="define"><name>_DYNAMIC_ARRAY_CPP_</name></member>
+  </compound>
+  <compound refid="de/d21/a00006" kind="file"><name>DynamicArray.h</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,547 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.8">
+  <compounddef id="d8/d84/a00001" kind="class" prot="public">
+    <compoundname>ArrayBase</compoundname>
+    <derivedcompoundref refid="d7/d46/a00002" prot="public" virt="non-virtual">DynamicArray&lt; T &gt;</derivedcompoundref>
+    <includes refid="d0/d0b/a00004" local="no">ArrayBase.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename</type>
+        <declname>T</declname>
+        <defname>T</defname>
+      </param>
+    </templateparamlist>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="d8/d84/a00001_1aa881b5ee704e0f293b4dddbaf8990149" prot="public" static="no">
+        <type>T</type>
+        <definition>typedef T ArrayBase&lt; T &gt;::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="46" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d8/d84/a00001_1a0ad9821b150c9436112acd478b46db51" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* ArrayBase&lt; T &gt;::_data[]</definition>
+        <argsstring>[]</argsstring>
+        <name>_data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Raw array of type T.</para><para><simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="29" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d84/a00001_1a81ac25e6e454093831c4e17c01cd0aa5" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t ArrayBase&lt; T &gt;::_currentSize</definition>
+        <argsstring></argsstring>
+        <name>_currentSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current size of the array.</para><para><simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="36" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d84/a00001_1a82e2db846b362b01f52d31bf8823dc96" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t ArrayBase&lt; T &gt;::_maxSize</definition>
+        <argsstring></argsstring>
+        <name>_maxSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Maximum size of the array.</para><para><simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="43" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/d84/a00001_1a949fbe49f202aed7d4ce8442b7fd0bd5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ArrayBase&lt; T &gt;::ArrayBase</definition>
+        <argsstring>(void)</argsstring>
+        <name>ArrayBase</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Default initializing constructor.</para><para>Creates the raw array of type <computeroutput>T</computeroutput> and sets the maximum size to 10 by default. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="54" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.cpp" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1af9db2c439a3c5bc723c66d44ba4049a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ArrayBase&lt; T &gt;::ArrayBase</definition>
+        <argsstring>(size_t maxSize)</argsstring>
+        <name>ArrayBase</name>
+        <param>
+          <type>size_t</type>
+          <declname>maxSize</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializing constructor. Sets max size to <computeroutput>maxSize</computeroutput>, effectively overriding the default.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maxSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(size_t) Maximum size of the array. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="62" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.cpp" bodystart="26" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a5de8eae891c4d4f855a6739fc573de85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ArrayBase&lt; T &gt;::ArrayBase</definition>
+        <argsstring>(size_t maxSize, T fill)</argsstring>
+        <name>ArrayBase</name>
+        <param>
+          <type>size_t</type>
+          <declname>maxSize</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>fill</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initializing constructor. Sets max size to <computeroutput>maxSize</computeroutput> and filling each element of the array with <computeroutput>fill</computeroutput>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>maxSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(size_t) Maximum size of the array. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fill</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(T) Contents of each element. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="71" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.cpp" bodystart="44" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a76eb6a2544ace5a6c8cc972b876b60a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>ArrayBase&lt; T &gt;::~ArrayBase</definition>
+        <argsstring>(void)</argsstring>
+        <name>~ArrayBase</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Destructor</para><para><simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="78" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.cpp" bodystart="64" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1aeed263e1e987901c8cc2c1e1d3102d73" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t ArrayBase&lt; T &gt;::size</definition>
+        <argsstring>(void)</argsstring>
+        <name>size</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query the current size.</para><para><simplesect kind="return"><para>(size_t) The current size. </para></simplesect>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1aabda9501caf50b75ce09e7ef47fd1de7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T ArrayBase&lt; T &gt;::get</definition>
+        <argsstring>(size_t index) const </argsstring>
+        <name>get</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query the element at specified index.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(size_t) Index of query element. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(T) The element at specified index. </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::out_of_range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index is out of the range. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="96" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.cpp" bodystart="76" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a5a9fe61509061defe530d0ebc3a91497" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArrayBase&lt; T &gt;::set</definition>
+        <argsstring>(size_t index, T contents)</argsstring>
+        <name>set</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>contents</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the element at the specified index.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(size_t) Index of element. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>contents</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(T) Contents of element. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(void) </para></simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::out_of_range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Index is out of the range. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="107" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.cpp" bodystart="93" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1adc718f38281ba844303941c4d111cc8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ArrayBase&lt; T &gt;::find</definition>
+        <argsstring>(T element)</argsstring>
+        <name>find</name>
+        <param>
+          <type>T</type>
+          <declname>element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return first <computeroutput>index</computeroutput> that matches element.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(T) Element to match with. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(int) <computeroutput>index</computeroutput> or -1 if no match. </para></simplesect>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="116" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.cpp" bodystart="115" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a450ec98ae75a13f7dfbd6ba499218b8e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int ArrayBase&lt; T &gt;::find</definition>
+        <argsstring>(T element, size_t startIndex)</argsstring>
+        <name>find</name>
+        <param>
+          <type>T</type>
+          <declname>element</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>startIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return first <computeroutput>index</computeroutput> that matches <computeroutput>element</computeroutput> starting at the given index.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>element</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(T) Element to match with. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>startIndex</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(size_t) The <computeroutput>index</computeroutput> to start with. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(int) <computeroutput>index</computeroutput> or -1 if no match. </para></simplesect>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="127" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.cpp" bodystart="124" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a6becc5e91c79d7693c0d406e466f9ec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArrayBase&lt; T &gt;::fill</definition>
+        <argsstring>(T contents)</argsstring>
+        <name>fill</name>
+        <param>
+          <type>T</type>
+          <declname>contents</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set each element in raw array to given <computeroutput>element</computeroutput> up to the maximum size.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>contents</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(T) Element to fill <ref refid="d8/d84/a00001" kindref="compound">ArrayBase</ref> with. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(void) </para></simplesect>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="137" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.cpp" bodystart="158" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a11dc3b617f2fedbb3b499971493b9c4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ArrayBase&lt; T &gt;::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Clears all elements from the array. <simplesect kind="return"><para>(void) </para></simplesect>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="144" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a1687635b3bda64e9064e53b8d5a91ac1" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool ArrayBase&lt; T &gt;::isEmpty</definition>
+        <argsstring>()</argsstring>
+        <name>isEmpty</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Test to see if array is empty.</para><para><simplesect kind="return"><para>(void) </para></simplesect>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="152" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a95a446bcd6e8b2ff10e6f5c0232e6069" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ArrayBase&lt; T &gt;::operator==</definition>
+        <argsstring>(const ArrayBase&lt; T &gt; &amp;rhs) const </argsstring>
+        <name>operator==</name>
+        <param>
+          <type>const <ref refid="d8/d84/a00001" kindref="compound">ArrayBase</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determine equality with given <ref refid="d8/d84/a00001" kindref="compound">ArrayBase</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(const <ref refid="d8/d84/a00001" kindref="compound">ArrayBase</ref> &lt;T&gt; &amp;) <ref refid="d8/d84/a00001" kindref="compound">ArrayBase</ref> to test against. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(bool) True if equal, otherwise false. </para></simplesect>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="162" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.cpp" bodystart="172" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1acb1f14f8761d00708f25281854bf0769" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ArrayBase&lt; T &gt;::operator!=</definition>
+        <argsstring>(const ArrayBase&lt; T &gt; &amp;rhs) const </argsstring>
+        <name>operator!=</name>
+        <param>
+          <type>const <ref refid="d8/d84/a00001" kindref="compound">ArrayBase</ref>&lt; T &gt; &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determine inequality with given <ref refid="d8/d84/a00001" kindref="compound">ArrayBase</ref>.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rhs</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(const <ref refid="d8/d84/a00001" kindref="compound">ArrayBase</ref> &lt;T&gt; &amp;) <ref refid="d8/d84/a00001" kindref="compound">ArrayBase</ref> to test against. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(bool) True if inequal, otherwise false. </para></simplesect>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="172" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.cpp" bodystart="197" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a654b9073ee55e973fc31a9c03affe423" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>T</type>
+        <definition>T ArrayBase&lt; T &gt;::operator[]</definition>
+        <argsstring>(size_t index) const </argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query the element given the index. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(size_t) Index of the element. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(T const) element at specified <computeroutput>index</computeroutput>. </para></simplesect>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="180" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.cpp" bodystart="220" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d84/a00001_1a38d83584b9e023781779af9dd733d822" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; ArrayBase&lt; T &gt;::operator[]</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Query the element given the index.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>index</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(size_t) Index of the element. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>(T &amp;) element at specified <computeroutput>index</computeroutput>. </para></simplesect>
+<simplesect kind="since"><para>0.1.0 </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="189" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.cpp" bodystart="210" bodyend="214"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Base class for array-like structures. </para>    </briefdescription>
+    <detaileddescription>
+<para>Contains the actual raw array of type T along with common properties and methods for array like structures. <simplesect kind="since"><para>0.1.0 </para></simplesect>
+<parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(typename) Element type of array. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>    </detaileddescription>
+    <inheritancegraph>
+      <node id="8">
+        <label>DynamicArray&lt; T &gt;</label>
+        <link refid="d7/d46/a00002"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ArrayBase&lt; T &gt;</label>
+        <link refid="d8/d84/a00001"/>
+      </node>
+    </inheritancegraph>
+    <location file="/home/bdfoster/Projects/c++/templates/ArrayBase.h" line="22" column="1" bodyfile="/home/bdfoster/Projects/c++/templates/ArrayBase.h" bodystart="22" bodyend="190"/>
+    <listofallmembers>
+      <member refid="d8/d84/a00001_1a81ac25e6e454093831c4e17c01cd0aa5" prot="private" virt="non-virtual"><scope>ArrayBase</scope><name>_currentSize</name></member>
+      <member refid="d8/d84/a00001_1a0ad9821b150c9436112acd478b46db51" prot="private" virt="non-virtual"><scope>ArrayBase</scope><name>_data</name></member>
+      <member refid="d8/d84/a00001_1a82e2db846b362b01f52d31bf8823dc96" prot="private" virt="non-virtual"><scope>ArrayBase</scope><name>_maxSize</name></member>
+      <member refid="d8/d84/a00001_1a949fbe49f202aed7d4ce8442b7fd0bd5" prot="public" virt="non-virtual"><scope>ArrayBase</scope><name>ArrayBase</name></member>
+      <member refid="d8/d84/a00001_1af9db2c439a3c5bc723c66d44ba4049a0" prot="public" virt="non-virtual"><scope>ArrayBase</scope><name>ArrayBase</name></member>
+      <member refid="d8/d84/a00001_1a5de8eae891c4d4f855a6739fc573de85" prot="public" virt="non-virtual"><scope>ArrayBase</scope><name>ArrayBase</name></member>
+      <member refid="d8/d84/a00001_1a11dc3b617f2fedbb3b499971493b9c4f" prot="public" virt="non-virtual"><scope>ArrayBase</scope><name>clear</name></member>
+      <member refid="d8/d84/a00001_1a6becc5e91c79d7693c0d406e466f9ec6" prot="public" virt="non-virtual"><scope>ArrayBase</scope><name>fill</name></member>
+      <member refid="d8/d84/a00001_1adc718f38281ba844303941c4d111cc8c" prot="public" virt="non-virtual"><scope>ArrayBase</scope><name>find</name></member>
+      <member refid="d8/d84/a00001_1a450ec98ae75a13f7dfbd6ba499218b8e" prot="public" virt="non-virtual"><scope>ArrayBase</scope><name>find</name></member>
+      <member refid="d8/d84/a00001_1aabda9501caf50b75ce09e7ef47fd1de7" prot="public" virt="non-virtual"><scope>ArrayBase</scope><name>get</name></member>
+      <member refid="d8/d84/a00001_1a1687635b3bda64e9064e53b8d5a91ac1" prot="public" virt="virtual"><scope>ArrayBase</scope><name>isEmpty</name></member>
+      <member refid="d8/d84/a00001_1acb1f14f8761d00708f25281854bf0769" prot="public" virt="non-virtual"><scope>ArrayBase</scope><name>operator!=</name></member>
+      <member refid="d8/d84/a00001_1a95a446bcd6e8b2ff10e6f5c0232e6069" prot="public" virt="non-virtual"><scope>ArrayBase</scope><name>operator==</name></member>
+      <member refid="d8/d84/a00001_1a654b9073ee55e973fc31a9c03affe423" prot="public" virt="non-virtual"><scope>ArrayBase</scope><name>operator[]</name></member>
+      <member refid="d8/d84/a00001_1a38d83584b9e023781779af9dd733d822" prot="public" virt="non-virtual"><scope>ArrayBase</scope><name>operator[]</name></member>
+      <member refid="d8/d84/a00001_1a5a9fe61509061defe530d0ebc3a91497" prot="public" virt="non-virtual"><scope>ArrayBase</scope><name>set</name></member>
+      <member refid="d8/d84/a00001_1aeed263e1e987901c8cc2c1e1d3102d73" prot="public" virt="non-virtual"><scope>ArrayBase</scope><name>size</name></member>
+      <member refid="d8/d84/a00001_1aa881b5ee704e0f293b4dddbaf8990149" prot="public" virt="non-virtual"><scope>ArrayBase</scope><name>type</name></member>
+      <member refid="d8/d84/a00001_1a76eb6a2544ace5a6c8cc972b876b60a0" prot="public" virt="non-virtual"><scope>ArrayBase</scope><name>~ArrayBase</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

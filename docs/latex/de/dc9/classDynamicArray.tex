@@ -1,0 +1,219 @@
+\hypertarget{classDynamicArray}{\section{Dynamic\+Array$<$ T $>$ Class Template Reference}
+\label{classDynamicArray}\index{Dynamic\+Array$<$ T $>$@{Dynamic\+Array$<$ T $>$}}
+}
+
+
+A resizable array. Inherits \hyperlink{classArrayBase}{Array\+Base}.  
+
+
+
+
+{\ttfamily \#include $<$Dynamic\+Array.\+h$>$}
+
+
+
+Inheritance diagram for Dynamic\+Array$<$ T $>$\+:
+
+
+Collaboration diagram for Dynamic\+Array$<$ T $>$\+:
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classDynamicArray_a7d42e6eaa66bab7c43f193e78d2d56a9}{Dynamic\+Array} ()
+\item 
+\hyperlink{classDynamicArray_a2b4e0e5f2d4af1b1ec5e37bcf2b63e27}{Dynamic\+Array} (size\+\_\+t \hyperlink{classDynamicArray_aeb1916d4d9cf7db37df86cb7a603c198}{max\+Size})
+\item 
+\hyperlink{classDynamicArray_ad054824baa39e43dd319dad7edff0316}{Dynamic\+Array} (size\+\_\+t \hyperlink{classDynamicArray_aeb1916d4d9cf7db37df86cb7a603c198}{max\+Size}, T \hyperlink{classArrayBase_a6becc5e91c79d7693c0d406e466f9ec6}{fill})
+\item 
+\hyperlink{classDynamicArray_ae6f8273691c6c3a9284e7455e6bea18d}{Dynamic\+Array} (const \hyperlink{classDynamicArray}{Dynamic\+Array} \&arr)
+\item 
+\hyperlink{classDynamicArray_a1ace6a2b9a5ed8890a840c400f41ce9a}{$\sim$\+Dynamic\+Array} (void)
+\item 
+void \hyperlink{classDynamicArray_a7d9f29d3efa102b7d8229bfc24b9d431}{resize} (void)
+\item 
+void \hyperlink{classDynamicArray_aee346fa4cd0db8d1f385ea82aa93f541}{resize} (size\+\_\+t \hyperlink{classDynamicArray_aeb1916d4d9cf7db37df86cb7a603c198}{max\+Size})
+\item 
+const size\+\_\+t \hyperlink{classDynamicArray_aeb1916d4d9cf7db37df86cb7a603c198}{max\+Size} (void)
+\item 
+const \hyperlink{classDynamicArray}{Dynamic\+Array} \& \hyperlink{classDynamicArray_a683eba7c0e4652c6b1baae93e1e6ca7b}{operator=} (const \hyperlink{classDynamicArray}{Dynamic\+Array} \&)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class Dynamic\+Array$<$ T $>$}
+
+A resizable array. Inherits \hyperlink{classArrayBase}{Array\+Base}. 
+
+Contains specific methods to resize a raw array. \begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & (typename) Element type of array. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classDynamicArray_a7d42e6eaa66bab7c43f193e78d2d56a9}{\index{Dynamic\+Array@{Dynamic\+Array}!Dynamic\+Array@{Dynamic\+Array}}
+\index{Dynamic\+Array@{Dynamic\+Array}!Dynamic\+Array@{Dynamic\+Array}}
+\subsubsection[{Dynamic\+Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Dynamic\+Array}$<$ T $>$\+::{\bf Dynamic\+Array} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDynamicArray_a7d42e6eaa66bab7c43f193e78d2d56a9}
+Default initializing constructor.
+
+Calls \hyperlink{classArrayBase}{Array\+Base} default initializing constructor.
+
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classDynamicArray_a2b4e0e5f2d4af1b1ec5e37bcf2b63e27}{\index{Dynamic\+Array@{Dynamic\+Array}!Dynamic\+Array@{Dynamic\+Array}}
+\index{Dynamic\+Array@{Dynamic\+Array}!Dynamic\+Array@{Dynamic\+Array}}
+\subsubsection[{Dynamic\+Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Dynamic\+Array}$<$ T $>$\+::{\bf Dynamic\+Array} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{max\+Size}
+\end{DoxyParamCaption}
+)}}\label{classDynamicArray_a2b4e0e5f2d4af1b1ec5e37bcf2b63e27}
+Initializing constructor. Sets max size to {\ttfamily max\+Size}, effectively overriding the default.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Size} & (size\+\_\+t) Maximum size of the array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classDynamicArray_ad054824baa39e43dd319dad7edff0316}{\index{Dynamic\+Array@{Dynamic\+Array}!Dynamic\+Array@{Dynamic\+Array}}
+\index{Dynamic\+Array@{Dynamic\+Array}!Dynamic\+Array@{Dynamic\+Array}}
+\subsubsection[{Dynamic\+Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Dynamic\+Array}$<$ T $>$\+::{\bf Dynamic\+Array} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{max\+Size, }
+\item[{T}]{fill}
+\end{DoxyParamCaption}
+)}}\label{classDynamicArray_ad054824baa39e43dd319dad7edff0316}
+Initializing constructor. Sets max size to {\ttfamily max\+Size} and filling each element of the array with {\ttfamily fill}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Size} & (size\+\_\+t) Maximum size of the array. \\
+\hline
+{\em fill} & (T) Contents of each element. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classDynamicArray_ae6f8273691c6c3a9284e7455e6bea18d}{\index{Dynamic\+Array@{Dynamic\+Array}!Dynamic\+Array@{Dynamic\+Array}}
+\index{Dynamic\+Array@{Dynamic\+Array}!Dynamic\+Array@{Dynamic\+Array}}
+\subsubsection[{Dynamic\+Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Dynamic\+Array}$<$ T $>$\+::{\bf Dynamic\+Array} (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dynamic\+Array}$<$ T $>$ \&}]{arr}
+\end{DoxyParamCaption}
+)}}\label{classDynamicArray_ae6f8273691c6c3a9284e7455e6bea18d}
+Copy constructor.
+
+The source \hyperlink{classDynamicArray}{Dynamic\+Array} can be of any size, as long as they are the same type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em arr} & (const \hyperlink{classDynamicArray}{Dynamic\+Array} \&) The source \hyperlink{classDynamicArray}{Dynamic\+Array}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classDynamicArray_a1ace6a2b9a5ed8890a840c400f41ce9a}{\index{Dynamic\+Array@{Dynamic\+Array}!````~Dynamic\+Array@{$\sim$\+Dynamic\+Array}}
+\index{````~Dynamic\+Array@{$\sim$\+Dynamic\+Array}!Dynamic\+Array@{Dynamic\+Array}}
+\subsubsection[{$\sim$\+Dynamic\+Array}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ {\bf Dynamic\+Array}$<$ T $>$\+::$\sim${\bf Dynamic\+Array} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDynamicArray_a1ace6a2b9a5ed8890a840c400f41ce9a}
+Destructor.
+
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classDynamicArray_aeb1916d4d9cf7db37df86cb7a603c198}{\index{Dynamic\+Array@{Dynamic\+Array}!max\+Size@{max\+Size}}
+\index{max\+Size@{max\+Size}!Dynamic\+Array@{Dynamic\+Array}}
+\subsubsection[{max\+Size}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ const size\+\_\+t {\bf Dynamic\+Array}$<$ T $>$\+::max\+Size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDynamicArray_aeb1916d4d9cf7db37df86cb7a603c198}
+Query the maximum size of the array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em (void)} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classDynamicArray_a683eba7c0e4652c6b1baae93e1e6ca7b}{\index{Dynamic\+Array@{Dynamic\+Array}!operator=@{operator=}}
+\index{operator=@{operator=}!Dynamic\+Array@{Dynamic\+Array}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ const {\bf Dynamic\+Array}$<$ T $>$ \& {\bf Dynamic\+Array}$<$ T $>$\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Dynamic\+Array}$<$ T $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{classDynamicArray_a683eba7c0e4652c6b1baae93e1e6ca7b}
+Assignment operator.
+
+Assigns the right hand side of the assignment operator to the left. 
+\begin{DoxyParams}{Parameters}
+{\em rhs} & (const \hyperlink{classDynamicArray}{Dynamic\+Array} \&) The source \hyperlink{classDynamicArray}{Dynamic\+Array}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classDynamicArray_a7d9f29d3efa102b7d8229bfc24b9d431}{\index{Dynamic\+Array@{Dynamic\+Array}!resize@{resize}}
+\index{resize@{resize}!Dynamic\+Array@{Dynamic\+Array}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Dynamic\+Array}$<$ T $>$\+::resize (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{classDynamicArray_a7d9f29d3efa102b7d8229bfc24b9d431}
+Sets max\+Size equal to current\+Size.
+
+
+\begin{DoxyParams}{Parameters}
+{\em (void)} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+\hypertarget{classDynamicArray_aee346fa4cd0db8d1f385ea82aa93f541}{\index{Dynamic\+Array@{Dynamic\+Array}!resize@{resize}}
+\index{resize@{resize}!Dynamic\+Array@{Dynamic\+Array}}
+\subsubsection[{resize}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ void {\bf Dynamic\+Array}$<$ T $>$\+::resize (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{max\+Size}
+\end{DoxyParamCaption}
+)}}\label{classDynamicArray_aee346fa4cd0db8d1f385ea82aa93f541}
+Sets a new max\+Size.
+
+If max\+Size is less than \+\_\+current\+Size, then the array is truncated. If max\+Size is greater than current\+Size, then the array is made larger and the new elements are not initialized to anything. If max\+Size is the same as current\+Size, then nothing happens except for the removal of uninitialized elements.
+
+
+\begin{DoxyParams}{Parameters}
+{\em max\+Size} & The new maximum size of the array. \\
+\hline
+\end{DoxyParams}
+\begin{DoxySince}{Since}
+0.\+1.\+0 
+\end{DoxySince}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{DynamicArray_8h}{Dynamic\+Array.\+h}\item 
+\hyperlink{DynamicArray_8cpp}{Dynamic\+Array.\+cpp}\end{DoxyCompactItemize}
