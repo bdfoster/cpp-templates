@@ -1,4 +1,8 @@
-
+/**
+ * @file        DynamicArray.cpp
+ * @author      Brian D. Foster
+ * @copyright   The MIT License (MIT)
+ */
 
 #ifndef _DYNAMIC_ARRAY_CPP_
 #define _DYNAMIC_ARRAY_CPP_
