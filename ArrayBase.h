@@ -7,7 +7,7 @@
 #ifndef _ARRAY_BASE_H_
 #define _ARRAY_BASE_H_
 
-#include <cstring>      ///< for size_t definition
+#include <cstring>
 
 /**
  * @class       ArrayBase

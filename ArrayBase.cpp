@@ -8,7 +8,7 @@
 #define _ARRAY_BASE_CPP_
 
 #include "ArrayBase.h"
-#include <stdexcept>        ///< for std::out_of_bounds exception
+#include <stdexcept>
 
 //
 // Default constructor.
