@@ -1,0 +1,19 @@
+/**
+ * @file        DynamicArray.mpc
+ * @author      Brian D. Foster
+ * @copyright   The MIT License (MIT)
+ */
+
+project (DynamicArray) {
+  install = .
+  
+  specific(make) {
+	compile_flags += -O0 -std=c++11 -g
+  }
+
+  Template_Files {
+    ArrayBase.cpp
+    DynamicArray.cpp
+  }
+  
+}
